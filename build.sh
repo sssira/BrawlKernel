@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export KERNELNAME="LoliKernel"
+export KERNELNAME="LoliKernel-Test"
 
-export LOCALVERSION=1.3
+export LOCALVERSION=1.4
 
 export KBUILD_BUILD_USER=Prooholic
 
