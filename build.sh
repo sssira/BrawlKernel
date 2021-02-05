@@ -2,11 +2,11 @@
 
 export KERNELNAME="LoliKernel"
 
-export LOCALVERSION=1.2
+export LOCALVERSION=1.3
 
-export KBUILD_BUILD_USER=Peter
+export KBUILD_BUILD_USER=Prooholic
 
-export KBUILD_BUILD_HOST=DroneCI
+export KBUILD_BUILD_HOST=LoliServer
 
 export TOOLCHAIN=clang
 
@@ -16,15 +16,15 @@ source helper
 
 gen_toolchain
 
-send_msg "Start building ${KERNELNAME} ${LOCALVERSION} for ${DEVICES}..."
+send_msg "Start building OC ${KERNELNAME} ${LOCALVERSION} for ${DEVICES}..."
 
 START=$(date +"%s")
 
 for i in ${DEVICES//,/ }
 do
-	build ${i} -oldcam
+	build ${i} -oldcam -overclock
 
-	build ${i} -newcam
+	build ${i} -newcam -overclock
 done
 
 END=$(date +"%s")
