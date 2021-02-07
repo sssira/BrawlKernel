@@ -2,7 +2,7 @@
 
 export KERNELNAME="LoliKernel-Test"
 
-export LOCALVERSION=1.4
+export LOCALVERSION=XxX
 
 export KBUILD_BUILD_USER=Prooholic
 
