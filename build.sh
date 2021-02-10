@@ -1,12 +1,12 @@
 #!/bin/bash
 
-export KERNELNAME="LoliKernel"
+export KERNELNAME="BrawlKernel"
 
-export LOCALVERSION=1.3
+export LOCALVERSION=1
 
-export KBUILD_BUILD_USER=Prooholic
+export KBUILD_BUILD_USER=Sssira
 
-export KBUILD_BUILD_HOST=LoliServer
+export KBUILD_BUILD_HOST=DroneCi
 
 export TOOLCHAIN=clang
 
